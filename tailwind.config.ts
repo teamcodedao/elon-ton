@@ -8,11 +8,14 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      container: {
+        center: true,
+      },
       screens: {
         '2xl': '1440px',
       },
       colors: {
-        primary: '#5A161B',
+        primary: '#0088CC',
       },
     },
   },
