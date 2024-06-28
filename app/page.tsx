@@ -68,7 +68,11 @@ export default function Home() {
               <p>Wanna stop missing out?</p>
             </div>
             <div className='flex justify-center mt-10'>
-              <a href='/' target='_buy' className='flex justify-center'>
+              <a
+                href={process.env.NEXT_PUBLIC_COIN_URL}
+                target='_buy'
+                className='flex justify-center'
+              >
                 <img
                   src='/buy-now.svg'
                   alt=''
