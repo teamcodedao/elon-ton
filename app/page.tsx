@@ -5,6 +5,7 @@ import img2 from './image-2.png';
 import img3 from './image-3.png';
 import elon1 from './elon-1.png';
 import elon2 from './elon-2.png';
+import elon3 from './elon-3.png';
 
 import Socials from './socials';
 
@@ -30,7 +31,7 @@ export default function Home() {
             src={img2}
             alt=''
             height={226}
-            className='absolute object-contain top-[calc(50%+40px)] sm:top-[calc(50%+100px)] -translate-y-1/2 right-[5%] sm:right-[20%] h-[70px] sm:h-[100px] lg:h-[150px] xl:h-[226px]'
+            className='absolute drop-shadow-normal object-contain top-[calc(50%+40px)] sm:top-[calc(50%+100px)] -translate-y-1/2 right-[5%] sm:right-[20%] h-[70px] sm:h-[100px] lg:h-[150px] xl:h-[226px]'
           />
         </div>
       </div>
@@ -52,10 +53,10 @@ export default function Home() {
               === Official $ELON Contract ===
             </h2>
             <p className='text-3xl sm:text-4xl md:text-[40px] break-all text-center mt-10'>
-              0x69420E3A3aa9E17Dea102Bb3a9b3B73dcDDB9528
+              TBA
             </p>
             <Socials />
-            <div className='mt-8 sm:mt-10 text-3xl sm:text-4xl md:text-[40px] space-y-3 sm:space-y-5 text-center max-w-[676px] mx-auto'>
+            <div className='mt-8 sm:mt-10 text-3xl sm:text-4xl md:text-[40px] space-y-3 sm:space-y-5 text-center max-w-[min(676px,100%)] mx-auto'>
               <p>
                 Get a share of Earth's richest man -now with a goated contract
                 address!
@@ -67,11 +68,34 @@ export default function Home() {
               <p>Wanna stop missing out?</p>
             </div>
             <div className='flex justify-center mt-10'>
-              <a href='/' target='_buy'>
-                <img src='/buy-now.svg' alt='' />
+              <a href='/' target='_buy' className='flex justify-center'>
+                <img
+                  src='/buy-now.svg'
+                  alt=''
+                  className='max-lg:!max-w-[min(450px,100%)]'
+                />
               </a>
             </div>
           </div>
+        </div>
+
+        <div className='flex items-center justify-between mt-16 lg:mt-24 relative z-10 overflow-hidden'>
+          <div className='text-white text-center px-10 space-y-5 relative z-20 max-md:multi-[w-full;pb-20]'>
+            <h2 className='uppercase text-5xl sm:text-6xl md:text-7xl lg:text-8xl'>
+              tokenomics
+            </h2>
+            <p className='text-4xl sm:text-5xl md:text-6xl lg:text-[64px]'>
+              Supply: 100,000,000
+            </p>
+            <p className='text-4xl sm:text-5xl md:text-6xl lg:text-[64px]'>
+              No tax, no bullshit
+            </p>
+          </div>
+          <Image
+            src={elon3}
+            alt=''
+            className='max-md:multi-[absolute;inset-0] -mb-24'
+          />
         </div>
       </div>
 
