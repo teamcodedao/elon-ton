@@ -36,7 +36,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='relative after:multi-[absolute;top-72;left-0;size-full;opacity-60;bg-[url(/ton-bg.svg)]]'>
+      <div className='relative bg-primary after:multi-[absolute;top-72;left-0;size-full;opacity-60;bg-[url(/ton-bg.svg)]]'>
         <div className='rotate-[-11deg] w-[250px] sm:w-[300px] md:w-[400px] lg:w-[596px] absolute z-0 top-0 -left-16 lg:-left-24'>
           <Image
             src={elon2}

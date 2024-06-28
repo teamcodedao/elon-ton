@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-primary;
+  @apply bg-primary bg-[url(./blur.png)] bg-no-repeat bg-cover;
 }
 
 @layer utilities {
